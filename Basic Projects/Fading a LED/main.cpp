@@ -8,18 +8,18 @@ int brightness = 0;
 
 
 void setup() {
-	pinMode(ledPIN, OUTPUT);
+    pinMode(ledPIN, OUTPUT);
 }
 
 
 void loop() {
-	analogWrite(ledPIN, brightness);
+    analogWrite(ledPIN, brightness);
 
-	brightness = brightness + fadeAmount;
+    brightness = brightness + fadeAmount;
 
-	if (brightness <= 0 || brightness >= 255) {
-		fadeAmount = -fadeAmount;
-	}
+    if (brightness <= 0 || brightness >= 255) {
+        fadeAmount = -fadeAmount;
+    }
 
-	delay(30);
+    delay(30);
 }

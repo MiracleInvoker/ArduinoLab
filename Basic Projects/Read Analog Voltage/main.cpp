@@ -2,14 +2,14 @@
 
 
 void setup() {
-	Serial.begin(9600);
+    Serial.begin(9600);
 }
 
 
 void loop() {
-	int sensorValue = analogRead(A0);
+    int sensorValue = analogRead(A0);
 
-	float voltage = sensorValue * (5.0 / 1023.0);
+    float voltage = sensorValue * (5.0 / 1023.0);
 
-	Serial.println(voltage);
+    Serial.println(voltage);
 }
